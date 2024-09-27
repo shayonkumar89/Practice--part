@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flood Donation Site</title>
+    <!-- link of web-favicon -->
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <!-- link of daisy-Ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#191919]">
+
+
+  <!-- navbar start -->
+  <nav class="">
+    <div class="navbar bg-base-100 bg-[#f9f7f3] py-[30px] px-4 flex justify-between lg:px-[40px]">
+      <div class="navbar-start">
+        <a href="index.html" class="btn lg:btn-md btn-sm  bg-[#b4f461] text-sm font-bold lg:px-[32px]">Home</a>
+      </div>
+      <div class="navbar-center lg:flex gap-2">
+        <img class="lg:w-10 md:w-5 sm:w-3" src="/images/logo.png" alt="">
+        <h3 class="font-bold lg:text-[24px] text-sm">Donate Bangladesh</h3>
+      </div>
+      <div class="navbar-end">
+        <img src="/images/coin.png" alt="">
+        <h3 class="font-lg md:text-sm lg:text-[24px]"><span id="main-balance">5500 </span>BDT</h3> 
+      </div>
+    </div>
+  </nav>
+
+  <section class="px-10 py-4 mt-5 mb-5">
+    <div class="mb-10">
+      <h1 class="lg:text-[40px] text-md font-bold text-[#b4f461]">Question for Dom❔</h1>
+    </div>
+
+    <!-- question num---1 -->
+    <div class="collapse collapse-plus bg-base-200 mb-1">
+      <input type="radio" name="my-accordion-3" checked="checked" />
+      <div class="collapse-title text-xl font-medium">What is the DOM, and how does it represent a web page?</div>
+      <div class="collapse-content">
+        <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of objects, where each object corresponds to a part of the document (like elements, attributes, and text). This allows developers to programmatically interact with and manipulate the structure, style, and content of web pages.</p>
+      </div>
+    </div>
+
+    <!-- question no--2 -->
+
+    <div class="collapse collapse-plus bg-base-200 mb-1">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-xl font-medium">How do you select an HTML element using JavaScript? Provide at least two methods?</div>
+      <div class="collapse-content">
+        <p>document.getElementById('element-id'): Selects an element by its ID.
+          document.querySelector('.class-name'): Selects the first element that matches a specified CSS selector (e.g., class, id, or tag).</p>
+      </div>
+    </div>
+
+    <!-- question--3 -->
+
+    <div class="collapse collapse-plus bg-base-200 mb-1">
+      <input type="radio" name="my-accordion-3"/>
+      <div class="collapse-title text-xl font-medium">How can you add a new HTML element to the DOM using JavaScript?</div>
+      <div class="collapse-content">
+        <p>Create the element using document.createElement('tagName').
+          Set its attributes and content using properties like element.innerHTML or element.setAttribute('attribute', 'value').
+          Append the new element to the DOM using parentElement.appendChild(newElement).</p>
+      </div>
+    </div>
+
+    <!-- question num--4 -->
+
+    <div class="collapse collapse-plus bg-base-200 mb-1">
+      <input type="radio" name="my-accordion-3"/>
+      <div class="collapse-title text-xl font-medium">What is the difference between innerHTML and textContent?</div>
+      <div class="collapse-content">
+        <p>innerHTML returns or sets the HTML markup inside an element, allowing you to insert HTML tags and elements as well as text.
+          textContent returns or sets only the text content of an element, ignoring any HTML tags. It’s useful for inserting plain text without interpreting it as HTML.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- script -->
+   <script src="js/donation.js"></script>
+   <script src="js/donation_function.js"></script>
+</body>
+</html>
